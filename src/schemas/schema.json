@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "properties": {
+    "nom": {
+      "type": "string",
+      "minLength": 1
+    },
+    "continents": {
+      "type": "object",
+      "properties": {
+        "Africa": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": ["Cameroon", "Nigeria", "Egypt", "South Africa"]
+          }
+        },
+        "Europe": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": ["France", "Germany", "Italy"]
+          }
+        },
+        "America": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "enum": ["Canada", "United State"]
+          }
+        }
+      }
+    }
+  }
+}
